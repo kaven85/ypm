@@ -1,0 +1,26 @@
+{
+  "name": "ypm",
+  "version": "0.0.7",
+  "description": "yygame npm fis tool",
+  "main": "ypm.js",
+  "bin": {
+    "ypm": "bin/ypm"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ypm"
+  ],
+  "dependencies": {
+    "fis": "1.4.15",
+    "fis-parser-coffee-script": "0.0.2",
+    "fis-parser-less": "0.0.8",
+    "fis-parser-utc": "0.0.2",
+    "fis-lint-jshint": "0.0.5",
+    "fis-postpackager-seajs": "0.0.1",
+    "fis-optimizer-html-compress":"0.0.4"
+  },
+  "author": "Kaven.D",
+  "license": "MIT"
+}
