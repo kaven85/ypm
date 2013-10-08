@@ -112,3 +112,5 @@ fis.config.merge({
         }
     }
 });
+//设置sprite图片间隙为20px
+fis.config.set('settings.spriter.csssprites.margin', 20);
