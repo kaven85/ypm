@@ -18,7 +18,6 @@
     "fis-parser-less": "0.0.8",
     "fis-parser-utc": "0.0.2",
     "fis-lint-jshint": "0.0.5",
-    "fis-postpackager-seajs": "0.0.1",
     "fis-optimizer-html-compress":"0.0.4"
   },
   "author": "Kaven.D",
