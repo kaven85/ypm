@@ -83,7 +83,7 @@ fis.config.merge({
 		postprocessor : {
             js : 'jswrapper, require-async'
         },
-        postpackager : 'modjs'
+        postpackager : 'ypm'
     },
     settings: {
         parser: {
@@ -112,5 +112,3 @@ fis.config.merge({
         }
     }
 });
-//设置sprite图片间隙为20px
-fis.config.set('settings.spriter.csssprites.margin', 20);
