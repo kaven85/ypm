@@ -1,6 +1,6 @@
 {
   "name": "ypm",
-  "version": "0.1.1",
+  "version": "0.1.5",
   "description": "yygame npm fis tool",
   "main": "ypm.js",
   "bin": {
@@ -21,12 +21,6 @@
     "fis-postpackager-ypm": "*",
     "fis-optimizer-html-compress": "0.0.4"
   },
-  "author": {
-    "name": "Kaven.D"
-  },
-  "license": "MIT",
-  "readme": "yygame前端开发工具",
-  "readmeFilename": "README.md",
-  "_id": "ypm@0.1.0",
-  "_from": "ypm@"
+  "author": "Kaven.D",
+  "license": "MIT"
 }
