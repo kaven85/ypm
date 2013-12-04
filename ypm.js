@@ -35,11 +35,19 @@ fis.config.merge({
             },
             {
                 //其他js、css、coffee、less文件
-                reg: /\.(js|coffee|css|less)$/,
+                reg: /\.(js|coffee|less)$/,
                 //less和css文件会做csssprite处理
                 useSprite: true,
                 //不要放到js资源表里
                 useMap: false
+            },
+			 {
+                //其他js、css、coffee、less文件
+                reg: /\.css$/,
+                //less和css文件会做csssprite处理
+                useSprite: true,
+                //不要放到js资源表里
+                useMap: true
             },
             {
                 //readme文件，不要发布
