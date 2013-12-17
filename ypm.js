@@ -86,6 +86,9 @@ fis.config.merge({
         lint: {
             js: 'jshint'
         },
+		 postprocessor : {
+            js : 'ypm, require-async'
+        },
         postpackager : 'ypm'
     },
     settings: {
@@ -104,7 +107,7 @@ fis.config.merge({
             }
         },
         postprocessor : {
-            jswrapper : {
+            ypm : {
                 type : 'amd'
             }
         },
