@@ -58,9 +58,7 @@ fis.config.merge({
                 //前端模板
                 reg: '**.tmpl',
                 //当做类html文件处理，可以识别<img src="xxx"/>等资源定位标识
-                isHtmlLike: true,
-                //只是内嵌，不用发布
-                release: false
+                isJsLike:true
             }
         ],
         ext: {
@@ -87,9 +85,6 @@ fis.config.merge({
         },
         lint: {
             js: 'jshint'
-        },
-		postprocessor : {
-            js : 'jswrapper, require-async'
         },
         postpackager : 'ypm'
     },

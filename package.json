@@ -13,7 +13,7 @@
     "ypm"
   ],
   "dependencies": {
-    "fis": "*",
+    "fis": "1.6.0",
     "fis-parser-coffee-script": "0.0.2",
     "fis-parser-less": "0.0.8",
     "fis-parser-utc": "0.0.2",
