@@ -21,7 +21,7 @@ fis.config.merge({
                 //modules目录下的其他文件
                 reg: /^\/modules\/(.*)\.(js|coffee|less|css)$/i,
                 //是组件化的，会被jswrapper包装
-                isMod: false,
+                isMod: true,
                 //less和css文件会做csssprite处理
                 useSprite: true,
                 //id是去掉modules和.js后缀中间的部分
@@ -58,8 +58,7 @@ fis.config.merge({
                 //前端模板
                 reg: '**.tmpl',
                 //当做类html文件处理，可以识别<img src="xxx"/>等资源定位标识
-                isJsLike:true,
-				release: false
+                isJsLike:true
             }
         ],
         ext: {
@@ -112,12 +111,9 @@ fis.config.merge({
                 type : 'amd'
             }
         },
-        optimizer : {
-            'uglify-js' : {
-                mangle : {
-                    //不要压缩require关键字，否则seajs会识别不了require
-                    except : [ 'require' ]
-                }
+        postpackager: {
+            modjs: {
+                subpath: 'pkg/map.js'
             }
         }
     }

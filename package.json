@@ -1,6 +1,6 @@
 {
   "name": "ypm",
-  "version": "0.1.11",
+  "version": "0.1.9",
   "description": "yygame npm fis tool",
   "main": "ypm.js",
   "bin": {
