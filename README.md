@@ -32,51 +32,14 @@ npm install -g ypm
 
 非win系统最好将npm的包安装在用户目录下，尽量避免使用 ``sudo`` 来安装。修改npm install -g安装目录的方法为：
 
-```bash
-# 设置global路径为用户目录
-npm config set prefix ~/npm
-# 将~/npm/bin路径加到PATH变量中
-echo -e '\nexport PATH=~/npm/bin:$PATH' >> ~/.bashrc
-# 重新载入.bashrc
-source ~/.bashrc
+
+
 # 安装ypm
 npm install -g ypm
-```
+
 
 安装成功后执行 ``ypm -h`` 即可看到相关开发命令帮助
 
-## 获得一个todo样例项目
-
-```bash
-# 使用ypm的install命令来获取开发资源
-ypm install seajs-todo-demo
-```
-
-在当前目录下即可看到令人期待的seajs模块化项目啦！
-
-> 如果你执行 ``ypm install seajs-todo-demo`` 命令没成功，可以git clone 这个项目： [seajs-todo-demo](https://github.com/fouber/seajs-todo-demo)
-
-## 让代码跑起来！
-
-首先，启动内置的调试服务器：
-
-```bash
-ypm server start --no-rewrite
-```
-
-此时ypm会启动一个精巧的jetty服务器，并且打开浏览器访问了 http://127.0.0.1:8080 ，现在这个调试环境什么也没有，接下来，我们在命令行下cd到我们下载的样例项目中：
-
-```bash
-cd todo-demo
-```
-
-第三步，执行ypm的编译命令：
-
-```bash
-ypm release
-```
-
-第四步，刷新浏览器，查看我们的项目。
 
 ## 各种功能体验
 
