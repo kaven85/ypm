@@ -58,9 +58,9 @@ fis.config.merge({
                 //前端模板
                 reg: '**.tmpl',
                 //当做类html文件处理，可以识别<img src="xxx"/>等资源定位标识
-				isJsLike:true,
+                isJsLike:true,
 			    release: false
-         }
+            }
         ],
         ext: {
             //less输出为css文件
@@ -89,8 +89,8 @@ fis.config.merge({
         },
 		postprocessor : {
             js : 'ypm, require-async'
-        },
-		postpackager : 'ypm'
+		},
+        postpackager : 'ypm'
     },
     settings: {
         parser: {
@@ -116,12 +116,6 @@ fis.config.merge({
             modjs: {
                 subpath: 'pkg/map.js'
             }
-        },
-		yuidoc:{
-			options:{
-				paths:'trunk',
-				outdir:'api'
-			}				
-		}
+        }
     }
 });
