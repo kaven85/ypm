@@ -1,6 +1,6 @@
 {
   "name": "ypm",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "description": "yygame npm fis tool",
   "main": "ypm.js",
   "bin": {
@@ -17,7 +17,7 @@
     "url": "https://github.com/kaven85/ypm"
   },
   "dependencies": {
-    "fis": "1.6.0",
+    "fis": "1.7.8",
     "fis-parser-coffee-script": "0.0.2",
     "fis-parser-less": "0.0.8",
     "fis-parser-utc": "0.0.2",
